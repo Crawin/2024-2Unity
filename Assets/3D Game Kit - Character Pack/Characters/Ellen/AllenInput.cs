@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Timers;
 using TMPro;
-using UnityEditor.Animations;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
