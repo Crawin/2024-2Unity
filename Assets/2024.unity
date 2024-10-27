@@ -1075,7 +1075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cdf0c32292d7346b873bfbaa5634ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MAXHP: 0
+  MAXHP: 50
   Camera: {fileID: 2041422939}
   UI: {fileID: 1908491890}
   distanceFromPlayer: 2
