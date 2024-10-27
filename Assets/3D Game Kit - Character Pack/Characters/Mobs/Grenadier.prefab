@@ -1264,7 +1264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MAXHP: 15
   AttackRange: 5
-  DetectRange: 5
+  DetectRange: 10
   AttackDamage: 3
   IsBoss: 1
 --- !u!1 &7119730517093579088

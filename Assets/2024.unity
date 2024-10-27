@@ -122,6 +122,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &142948004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 142948006}
+  - component: {fileID: 142948005}
+  m_Layer: 0
+  m_Name: GameOver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &142948005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142948004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e213e2b65e69604e8d32cf1934887d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI: {fileID: 1908491890}
+--- !u!4 &142948006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142948004}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &278370980
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,9 +480,9 @@ MonoBehaviour:
   AddGaps: 0
   GoalPrefab: {fileID: 0}
   ChomperPrefab: {fileID: 8371204552942032807, guid: 07dd66c98ab7e954b97726845a19504b, type: 3}
-  nChompers: 5
+  nChompers: 10
   SpitterPrefab: {fileID: 6009786045362714819, guid: a11edf5adcc4b1442a58b8ebf4df6544, type: 3}
-  nSpitters: 5
+  nSpitters: 10
   GrenadierPrefab: {fileID: 7119730517093579016, guid: 35c072df169c0b54791433d3c799eb48, type: 3}
   nGrenadiers: 1
   NavMeshSurface: {fileID: 464589050}
@@ -1075,9 +1120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cdf0c32292d7346b873bfbaa5634ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MAXHP: 50
+  MAXHP: 20
   Camera: {fileID: 2041422939}
-  UI: {fileID: 1908491890}
+  Gameover: {fileID: 142948004}
   distanceFromPlayer: 2
   height: 2
   enemyLayer:
@@ -1507,6 +1552,7 @@ SceneRoots:
   - {fileID: 2041422942}
   - {fileID: 1996990809}
   - {fileID: 464589049}
+  - {fileID: 142948006}
   - {fileID: 593972421}
   - {fileID: 1908491894}
   - {fileID: 2074637685}

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -17,12 +18,14 @@ public class ControllAnimator : MonoBehaviour
     bool isChasing;
     bool isDying;
     public bool IsBoss;
+    private GameObject Gameover;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         currHP = MAXHP;
+        Gameover = GameObject.Find("GameOver");
     }
 
     // Update is called once per frame
@@ -102,15 +105,16 @@ public class ControllAnimator : MonoBehaviour
             if (IsBoss)
             {
                 GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-                int LeftEnemies = enemies.Length - 1;
+                int LeftEnemies = enemies.Length;
                 float damagePercent = LeftEnemies * 0.1f;
+                //Debug.Log(LeftEnemies);
                 if (damagePercent > 1) {
                     damagePercent = 1; 
                 }
                 damagePercent = 1 - damagePercent;
                 damage *= damagePercent;
             }
-            Debug.Log(gameObject.name + "이 " + damage + "피해를 입음");
+            //Debug.Log(gameObject.name + "이 " + damage + "피해를 입음");
             agent.isStopped = true;
             currHP -= damage;
             if (currHP <= 0)
@@ -127,6 +131,10 @@ public class ControllAnimator : MonoBehaviour
     void Dead()
     {
         Destroy(gameObject);
+        if (IsBoss)
+        {
+            Gameover.GetComponent<GameOver>().Complete();
+        }
     }
 
     void HurtEnd()

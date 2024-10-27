@@ -7,7 +7,6 @@ using UnityEditor.Animations;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using UnityEngine.SceneManagement;
 
 public class AllenInput : MonoBehaviour
@@ -15,8 +14,8 @@ public class AllenInput : MonoBehaviour
     public float MAXHP;
     private float currHP;
     public GameObject Camera;
-    public GameObject UI;
-    private float timeElapsed = 0f;
+    public GameObject Gameover;
+
     Animator animator;
     int rotationSpeed = 5;
     public float distanceFromPlayer = 5f; // 플레이어로부터의 거리
@@ -31,7 +30,6 @@ public class AllenInput : MonoBehaviour
     bool CanCombo;
     bool CanDamage;
     bool isDying;
-    bool canRestart;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,13 +39,11 @@ public class AllenInput : MonoBehaviour
         Punching = false;
         CanCombo = false;
         currHP = MAXHP;
-        UI.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        timeElapsed += Time.deltaTime;
         //Debug.Log(UI.GetComponentInChildren<TextMeshProUGUI>().text);
         if (isDying == false)
         {
@@ -68,13 +64,6 @@ public class AllenInput : MonoBehaviour
                 {
                     CanDamage = false;
                 }
-            }
-        }
-        if (canRestart)
-        {
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
     }
@@ -275,9 +264,7 @@ public class AllenInput : MonoBehaviour
     }
     void GameOver()
     {
-        Cursor.lockState = CursorLockMode.None;
-        UI.GetComponentInChildren<TextMeshProUGUI>().text = "Game Over\n\nTime: " + timeElapsed.ToString("F2") +"s\n\n Press Enter To Begin";
-        UI.SetActive(true);
-        canRestart = true;
+        Debug.Log("겜오버");
+        Gameover.GetComponent<GameOver>().Over();
     }
 }
