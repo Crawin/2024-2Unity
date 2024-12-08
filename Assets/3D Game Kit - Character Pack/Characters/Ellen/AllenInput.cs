@@ -13,7 +13,7 @@ public class AllenInput : MonoBehaviour
     private float currHP;
     public GameObject Camera;
     public GameObject Gameover;
-
+    public GameObject HPbarUI;
     Animator animator;
     int rotationSpeed = 5;
     public float distanceFromPlayer = 5f; // 플레이어로부터의 거리
@@ -28,6 +28,11 @@ public class AllenInput : MonoBehaviour
     bool CanCombo;
     bool CanDamage;
     bool isDying;
+    private GameObject HPbar;
+    private GameObject AimDot;
+    public GameObject hitEffectPrefab; // 불꽃 파티클 Prefab
+    bool escPushed;
+    private GameObject EscButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +42,14 @@ public class AllenInput : MonoBehaviour
         Punching = false;
         CanCombo = false;
         currHP = MAXHP;
+        HPbar = HPbarUI.transform.GetChild(0).gameObject;
+        HPbar.GetComponent<Slider>().maxValue = MAXHP;
+        HPbar.GetComponent<Slider>().value = MAXHP;
+        AimDot = HPbarUI.transform.GetChild(1).gameObject;
+        AimDot.SetActive(false);
+        escPushed = false;
+        EscButton = HPbarUI.transform.GetChild(2).gameObject;
+        EscButton.SetActive(escPushed);
     }
 
     // Update is called once per frame
@@ -47,6 +60,21 @@ public class AllenInput : MonoBehaviour
         {
             MouseInput();
             KeyboardInput();
+            //if (Input.GetKeyDown(KeyCode.Z))
+            //{
+            //    Damage(1);
+            //}
+            //if (Input.GetKeyDown(KeyCode.K))
+            //{
+            //    Collider[] hitColliders = Physics.OverlapSphere(transform.position, 20, enemyLayer);
+            //    {
+            //        foreach (var hitCollider in hitColliders)
+            //        {
+            //            Debug.Log($"Collision detected with: {hitCollider.name},{hitCollider.gameObject.layer}");
+            //            hitCollider.GetComponent<ControllAnimator>().GetDamage(100);
+            //        }
+            //    }
+            //}
             if (CanDamage)
             {
                 // 공격 범위 내의 적을 감지
@@ -97,6 +125,13 @@ public class AllenInput : MonoBehaviour
             // 부드럽게 회전
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            escPushed = !escPushed;
+            EscButton.SetActive(escPushed);
+            Cursor.lockState = escPushed ? CursorLockMode.None : CursorLockMode.Locked;
+        }
     }
 
     private void MouseInput()
@@ -107,6 +142,7 @@ public class AllenInput : MonoBehaviour
             animator.SetBool("Aiming?", true);
             animator.SetTrigger("AimingStart");
             animator.ResetTrigger("AimingEnd");
+            AimDot.SetActive(true);
         }
         if (Input.GetMouseButtonUp(1))
         {
@@ -116,6 +152,7 @@ public class AllenInput : MonoBehaviour
             animator.ResetTrigger("PunchCombo");
             animator.SetBool("Aiming?", false);
             animator.SetTrigger("AimingEnd");
+            AimDot.SetActive(false);
         }
         // 마우스 이동 감지
         mouseX += Input.GetAxis("Mouse X") * rotationSpeed;
@@ -135,7 +172,12 @@ public class AllenInput : MonoBehaviour
         PlayerCenter.y += PlayerHalfHeight;
         if (Physics.Raycast(PlayerCenter, CameraDirection, out PlayerToCam, distanceFromPlayer))
         {
-            Ndirection *= PlayerToCam.distance;
+            //Debug.Log(PlayerToCam.collider.gameObject.name);
+            if (PlayerToCam.distance < 2)
+                Ndirection *= PlayerToCam.distance;
+            else
+                Ndirection *= 2;
+
         }
         else
         {
@@ -163,7 +205,7 @@ public class AllenInput : MonoBehaviour
             CamRightOffset.y = 0; // xz 평면 벡터로
             CamRightOffset = CamRightOffset.normalized;
 
-            Vector3 aimingPosition = Camera.transform.position + CamForwardOffset*0.5f+ CamRightOffset;
+            Vector3 aimingPosition = Camera.transform.position + CamForwardOffset * 0.5f + CamRightOffset;
 
             Vector3 P2CDirection = (aimingPosition - PlayerCenter).normalized;
             if (Physics.Raycast(PlayerCenter, P2CDirection, out PlayerToCam, distanceFromPlayer))
@@ -212,6 +254,7 @@ public class AllenInput : MonoBehaviour
                 ControllAnimator target = hit.collider.GetComponent<ControllAnimator>();
                 if (target != null)
                 {
+                    SpawnHitEffect(hit.point, hit.normal);
                     target.GetDamage(3);
                 }
             }
@@ -249,6 +292,7 @@ public class AllenInput : MonoBehaviour
         {
             Debug.Log(gameObject.name + "이 " + damage + "피해를 입음");
             currHP -= damage;
+            HPbar.GetComponent<Slider>().value = currHP;
             if (currHP <= 0)
             {
                 isDying = true;
@@ -264,5 +308,22 @@ public class AllenInput : MonoBehaviour
     {
         Debug.Log("겜오버");
         Gameover.GetComponent<GameOver>().Over();
+    }
+
+    void SpawnHitEffect(Vector3 position, Vector3 normal)
+    {
+        // HitEffect 파티클 생성
+        GameObject hitEffect = Instantiate(hitEffectPrefab, position, Quaternion.LookRotation(normal));
+
+        // 파티클 시스템 자동 파괴
+        ParticleSystem particleSystem = hitEffect.GetComponent<ParticleSystem>();
+        if (particleSystem != null)
+        {
+            Destroy(hitEffect, particleSystem.main.duration);
+        }
+        else
+        {
+            Destroy(hitEffect, 2f); // 예비 파괴 (파티클이 없을 경우)
+        }
     }
 }

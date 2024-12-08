@@ -19,6 +19,7 @@ public class ControllAnimator : MonoBehaviour
     bool isDying;
     public bool IsBoss;
     private GameObject Gameover;
+    int beginMobs;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,8 @@ public class ControllAnimator : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         currHP = MAXHP;
         Gameover = GameObject.Find("GameOver");
+        beginMobs = Gameover.GetComponent<GameOver>().nChompers + Gameover.GetComponent<GameOver>().nSpitters;
+        //Debug.Log("BeginMobs: "+beginMobs);
     }
 
     // Update is called once per frame
@@ -106,15 +109,16 @@ public class ControllAnimator : MonoBehaviour
             {
                 GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
                 int LeftEnemies = enemies.Length;
-                float damagePercent = LeftEnemies * 0.1f;
+                float damagePercent = (beginMobs - LeftEnemies) * 0.1f;
                 //Debug.Log(LeftEnemies);
-                if (damagePercent > 1) {
-                    damagePercent = 1; 
-                }
-                damagePercent = 1 - damagePercent;
+                //if (damagePercent > 1) {
+                //    damagePercent = 1; 
+                //}
+                //damagePercent = 1 - damagePercent;
+                Debug.Log(damagePercent);
                 damage *= damagePercent;
             }
-            //Debug.Log(gameObject.name + "이 " + damage + "피해를 입음");
+            Debug.Log(gameObject.name + "이 " + damage + "피해를 입음");
             agent.isStopped = true;
             currHP -= damage;
             if (currHP <= 0)
