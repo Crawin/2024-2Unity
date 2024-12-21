@@ -7,6 +7,7 @@ TagManager:
   - Floor
   - Enemy
   - Boss
+  - StreetLamp
   layers:
   - Default
   - TransparentFX
