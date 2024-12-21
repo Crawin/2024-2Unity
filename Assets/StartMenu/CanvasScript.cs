@@ -47,6 +47,9 @@ public class NewBehaviourScript : MonoBehaviour
             case "Map2":
                 SceneManager.LoadScene("SecondMap");
                 break;
+            case "Map3":
+                SceneManager.LoadScene("ThirdMap");
+                break;
             case "Return":
                 StartCoroutine(FadeOutObject(mFirstButtons, 0, 1));
                 StartCoroutine(FadeOutObject(mSecondButtons, 1, 0));

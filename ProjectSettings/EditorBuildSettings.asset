@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SecondMap/SecondMap.unity
     guid: ccefb9a9068703c4c86369c0682c51da
+  - enabled: 1
+    path: Assets/ThirdMap/ThirdMap.unity
+    guid: 7a25da089035bb940a103f05511de2b2
   m_configObjects: {}

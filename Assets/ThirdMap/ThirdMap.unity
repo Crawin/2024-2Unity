@@ -211,7 +211,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.561202e-39, y: -9.1835e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 15, y: NaN, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -224,6 +224,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1759181
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759181
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 121.87
@@ -271,6 +279,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -379,7 +391,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.5905e-41, y: 3.4e-44, z: 0, w: 3140.8752}
+  m_BoundingSphereOverride: {x: NaN, y: 6e-44, z: 3.6e-44, w: 4.209e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -501,6 +513,9 @@ MonoBehaviour:
   nightColor: {r: 0.1, g: 0.1, b: 0.2, a: 1}
   dayIntensity: 1.5
   nightIntensity: 0.1
+  flickerSpeed: 0.5
+  flickerCount: 10
+  PlayerFlash: {fileID: 1212668058}
 --- !u!4 &107456807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
@@ -595,7 +610,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 7.53051e-39, y: 9.1835e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 6e-44, z: 4.6e-44, w: 3.9741e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -689,7 +704,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.16e-43, y: 2.51e-43, z: 0, w: 1.2416327e+30}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -712,7 +727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.45
+      value: 19.450005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -749,6 +764,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -857,7 +876,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 3.4e-44, z: 2.8871e-41, w: NaN}
+  m_BoundingSphereOverride: {x: 1.7e-44, y: NaN, z: 1, w: 1.4e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -951,7 +970,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.3e-44, z: 2.4272e-41, w: 3.0492e-41}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 7.865097e+30}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1045,7 +1064,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 7.7e-44, z: 0.05078125, w: 0.31640625}
+  m_BoundingSphereOverride: {x: 6e-44, y: NaN, z: 8.302771e+11, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1059,6 +1078,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1759179
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 236.78
       objectReference: {fileID: 0}
@@ -1068,23 +1099,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.09
+      value: 25.090004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.59931487
+      value: 0.5993149
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.59931487
+      value: -0.5993149
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.3752621
+      value: -0.37526214
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.3752621
+      value: -0.37526214
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1105,6 +1136,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1132,7 +1167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.24
+      value: -7.239998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1170,6 +1205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1197,7 +1236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.99
+      value: -2.9899998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1238,6 +1277,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1341,7 +1384,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 6.336649e-39, y: 2, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: NaN, z: 4.0258e-41, w: 1.0505479e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1401,6 +1444,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1465,6 +1512,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1616,7 +1667,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 7.55458e+31, y: 0, z: 3.69136e-40, w: NaN}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1639,7 +1690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.15
+      value: 19.150002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1676,6 +1727,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1866,6 +1921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1963,7 +2022,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0.0000034329241, y: 0.0000000103146665, z: 6.9e-44, w: 0}
+  m_BoundingSphereOverride: {x: 3.397912e-39, y: NaN, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2057,7 +2116,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1.05e-43}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 6.4285e-40, w: -1.309e-42}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2151,7 +2210,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.1011402e+9, y: 3.0481281e+32, z: 1.7077777e+19, w: 3.0262464e+29}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 4.5e-44, z: 1.8096e-41, w: 7.388181e+30}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2166,7 +2225,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 125.16
+      value: 125.159996
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2211,6 +2270,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2314,7 +2377,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 3.673418e-39, y: -9.1835e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 6e-44, z: 4.6e-44, w: 2.9733e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2375,6 +2438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2397,12 +2464,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1759179
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 208.07
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.94
+      value: -3.9399996
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2410,19 +2489,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.59931487
+      value: 0.5993149
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.59931487
+      value: -0.5993149
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.3752621
+      value: -0.37526214
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.3752621
+      value: -0.37526214
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2443,6 +2522,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2507,6 +2590,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2605,7 +2692,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: NaN}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2699,7 +2786,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.7e-44, z: 3.6166e-41, w: 7.13038e+30}
+  m_BoundingSphereOverride: {x: 3.397912e-39, y: NaN, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2769,6 +2856,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7631,7 +7722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.24
+      value: -7.239998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7668,6 +7759,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7771,7 +7866,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2e-44, y: 1.5124e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -7789,6 +7884,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759177
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 274.07
@@ -7836,6 +7939,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7934,7 +8041,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 6.6016866e+31, y: 1.4553457e+22, z: 4.7428895e+30, w: 7.215475e+22}
+  m_BoundingSphereOverride: {x: NaN, y: NaN, z: 2.2687054e-10, w: 1.846984e+25}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -7954,7 +8061,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.03
+      value: -8.029999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7999,6 +8106,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8097,7 +8208,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: -1, y: 9, z: 10, w: -10}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8112,7 +8223,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 171.79
+      value: 171.79001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8120,7 +8231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.13
+      value: 27.129997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8157,6 +8268,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8347,7 +8462,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 3.7881932e+29}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8441,7 +8556,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 2.8895842e+30}
+  m_BoundingSphereOverride: {x: 0, y: 9.1462667e-35, z: 4.8e-44, w: 1.40999e-40}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8461,7 +8576,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.12
+      value: 12.119999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8469,7 +8584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.24
+      value: -7.239998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8507,6 +8622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -8530,7 +8649,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.13
+      value: -8.130001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8538,7 +8657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.24
+      value: -7.239998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8575,6 +8694,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8678,7 +8801,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 6e-44, z: 4.8e-44, w: 1.6234e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8738,6 +8861,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8802,6 +8929,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8905,7 +9036,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 3.6e-44}
+  m_BoundingSphereOverride: {x: 2.571394e-39, y: NaN, z: 1.8e-43, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9004,7 +9135,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 7.8e-44, z: 3.3156e-41, w: 2.3676e-41}
+  m_BoundingSphereOverride: {x: 0, y: -5.1088097e+9, z: 4.5905e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9069,6 +9200,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9167,7 +9302,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: -1.9055247e+9}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 3.7163734e+30}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9186,11 +9321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.45
+      value: -2.4499998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.45
+      value: -0.44999695
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9227,6 +9362,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9330,7 +9469,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2e-44, y: 1.5124e-41, z: 1.8e-43, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0.0000011984084}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9344,8 +9483,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759182
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 115.81
+      value: 115.80999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9353,7 +9496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 53.23
+      value: 53.230003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9391,6 +9534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -9414,7 +9561,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 121.61
+      value: 121.61001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9459,6 +9606,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9562,7 +9713,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2e-44, y: 1.5124e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0.00000018123319, z: 0.0000007937436, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9731,7 +9882,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: NaN}
+  m_BoundingSphereOverride: {x: 0.0000012495689, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9825,7 +9976,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1e-45}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 7.1155246e+30}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -10484,7 +10635,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 7.346838e-39, y: -0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 6.210738e-13, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -10582,7 +10733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -27.91
+      value: -27.909996
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10619,6 +10770,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10684,6 +10839,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -10747,6 +10906,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10817,7 +10980,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 103.66
+      value: 103.659996
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10862,6 +11025,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11064,7 +11231,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.561202e-39, y: -9.1835e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 6e-44, z: 6e-44, w: 1.289e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -11083,16 +11250,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1759182
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759182
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 267.53
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.51
+      value: -3.5100002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.48
+      value: -19.480003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11130,6 +11305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -11156,7 +11335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 67.05
+      value: 67.05001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11193,6 +11372,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11296,7 +11479,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1.5866982e+30}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 4.8e-44, z: 1.6694e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -11316,7 +11499,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 201.54
+      value: 201.54001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11324,7 +11507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.63
+      value: 7.6299973
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11361,6 +11544,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11459,7 +11646,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 7.0992766e+30}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 1.40999e-40}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -11553,7 +11740,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 7.2953354e+30}
+  m_BoundingSphereOverride: {x: 4.5905e-41, y: 3.970798e+31, z: 1.02e-43, w: -3.492053e+11}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -11572,6 +11759,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759181
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 66.03
       objectReference: {fileID: 0}
@@ -11581,7 +11772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.1
+      value: -2.0999985
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11619,6 +11810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -11641,8 +11836,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1759182
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 110.42
+      value: 110.420006
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11650,7 +11849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.39
+      value: 2.3899994
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11687,6 +11886,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11897,7 +12100,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.510128e-39, y: -2, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 6e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -11991,7 +12194,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.561202e-39, y: -9.1835e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.23e-43, y: NaN, z: 6e-44, w: 4.5e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -12235,7 +12438,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.7e-44, z: 2.4376e-41, w: 0}
+  m_BoundingSphereOverride: {x: 9.1835e-41, y: NaN, z: 9.78048e-39, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -12255,7 +12458,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 149.3
+      value: 149.30002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12300,6 +12503,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12403,7 +12610,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 7.426054e+30}
+  m_BoundingSphereOverride: {x: 0, y: -117702140, z: 4.5905e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -12502,7 +12709,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1.691413e+30}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 2.2096263e+29}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -12596,7 +12803,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 9.36722e-39, y: 9.1835e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 4.3e-44, y: 6e-44, z: 1.02e-43, w: 3.0239e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -12619,7 +12826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -31.51
+      value: -31.510002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12656,6 +12863,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12754,7 +12965,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 9.1837e-41, w: -1.06e-43}
+  m_BoundingSphereOverride: {x: 4.3e-44, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -12768,6 +12979,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.175918
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 117.01
       objectReference: {fileID: 0}
@@ -12777,23 +13000,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 34.53
+      value: 34.52999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.044972327
+      value: -0.04497233
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.044972327
+      value: 0.04497233
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7056752
+      value: -0.70567524
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.7056752
+      value: -0.70567524
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12814,6 +13037,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12851,7 +13078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.88
+      value: 14.879997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12888,6 +13115,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12991,7 +13222,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1e-44, z: 3.526e-41, w: -8.035201e+26}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: NaN, z: 1.0964e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -13085,7 +13316,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 9.1837e-41, w: -1.177e-42}
+  m_BoundingSphereOverride: {x: 0, y: -4.5898097e+28, z: 0, w: 1.6114932e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -13146,6 +13377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -13164,15 +13399,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55.98
+      value: 55.980003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.05
+      value: -3.0500002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.35
+      value: -10.349998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13210,6 +13445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -13232,16 +13471,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759182
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 164.59
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6
+      value: -1.6000004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 63.39
+      value: 63.390007
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13278,6 +13525,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13480,7 +13731,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 3.397912e-39, y: 9.1835e-41, z: 1.1e-44, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -13500,7 +13751,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 193.02
+      value: 193.02002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13508,7 +13759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 56.24
+      value: 56.239998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13545,6 +13796,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13639,7 +13894,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 85.11
+      value: 85.11001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13647,7 +13902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.73
+      value: 2.7300034
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13684,6 +13939,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13921,7 +14180,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.784899e+22, y: 1.1865871e+27, z: 2.9374699e+29, w: 7.214802e+22}
+  m_BoundingSphereOverride: {x: -1, y: -1.5201311e+30, z: 0, w: 2.7031253e+22}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -13982,6 +14241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -14013,7 +14276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.63
+      value: 9.629997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14051,6 +14314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -14074,7 +14341,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 97.22
+      value: 97.21999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14082,7 +14349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.88
+      value: 14.879997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14119,6 +14386,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14222,7 +14493,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.1051e-41, y: 8e-45, z: 7.3964775e+31, w: 4.1051e-41}
+  m_BoundingSphereOverride: {x: 5.16e-43, y: 6e-44, z: 4.5e-44, w: 1.618e-42}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -14352,7 +14623,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 3.673418e-39, y: -0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 5.16e-43, y: 7.85032e-31, z: 5.16e-43, w: 0.042968754}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -14446,7 +14717,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 7.09918e+30, z: 5.16e-43, w: 1.28e-43}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: NaN, z: 6e-44, w: -3.492053e+11}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -14540,7 +14811,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 9.1835e-41, y: 4.50031e-39, z: 4.545857e-39, w: NaN}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 4.5905e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -14555,7 +14826,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 217.39
+      value: 217.39001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14563,7 +14834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.8
+      value: -11.800003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14600,6 +14871,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14771,7 +15046,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.387723e-39, y: 9.1835e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 7.22507e+28, y: -4.5898097e+28, z: 1.02e-43, w: 1.6114932e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -14785,32 +15060,44 @@ PrefabInstance:
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1759179
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 226.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.55
+      value: -3.5500002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 37.3
+      value: 37.299995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.59931487
+      value: 0.5993149
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.59931487
+      value: -0.5993149
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.3752621
+      value: -0.37526214
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.3752621
+      value: -0.37526214
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14831,6 +15118,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14940,16 +15231,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1759181
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759182
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.93
+      value: -3.9300003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.45
+      value: -6.449997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14986,6 +15285,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15094,7 +15397,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.969307e-39, y: 1e-45, z: 0, w: 3.6890976e+30}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 6e-44, w: 6e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -15108,16 +15411,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 128.79
+      value: 128.79001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.14
+      value: -4.1400003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.63
+      value: 33.629997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15155,6 +15462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetLamp (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -15178,7 +15489,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 212.49
+      value: 212.49002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15186,7 +15497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.03
+      value: -2.0299988
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15223,6 +15534,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15321,7 +15636,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 9.1835e-41, y: 1.1681478e-37, z: 9.78048e-39, w: NaN}
+  m_BoundingSphereOverride: {x: 9.1835e-41, y: NaN, z: NaN, w: 1.37753e-40}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -15344,7 +15659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 49.42
+      value: 49.420006
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15381,6 +15696,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15484,7 +15803,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 9.1835e-41, y: NaN, z: NaN, w: 3.67342e-40}
+  m_BoundingSphereOverride: {x: 5.17e-43, y: 0, z: 0, w: 6e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -15497,6 +15816,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1931359868}
     m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1759177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1759177
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 285.96
@@ -15544,6 +15871,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
       propertyPath: m_Name
       value: StreetLamp (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e46d9513a5f13534b93262693de8cc0f, type: 3}
+      propertyPath: m_TagString
+      value: StreetLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15642,7 +15973,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.387723e-39, y: 9.1835e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -15825,7 +16156,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 9.4e-44, y: 0, z: 0.23828125, w: 0.04296875}
+  m_BoundingSphereOverride: {x: NaN, y: 1.6461315e+24, z: NaN, w: 5.61408e-40}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
